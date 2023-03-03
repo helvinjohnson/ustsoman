@@ -399,7 +399,7 @@
   <script>
     function sendMail() {
       Email.send({
-        Host: "smtp.elasticemail.com",
+        Host: "smtp.gmail.com",
         Username: "nidhin1234murali@gmail.com",
         Password: "48944C9DFF87E0F77A703CE79A7BBF74937B",
         To: 'shaiju@ustsoman.com',
@@ -409,7 +409,7 @@
         + "<br> Email: " + document.getElementById("email").value
         + "<br> Message : " + document.getElementById("message").value
       }).then(
-        message => alert(message)
+        message => alert("Email send successfully")
       );
     }
   </script>
